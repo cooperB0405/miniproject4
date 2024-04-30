@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="https://kit.fontawesome.com/2f9d13d02f.js" crossorigin="anonymous"></script>
+    
+    <title>JS Slideshow</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Click Here to Return Home"><img src="images/logoimage.jpg" alt=""></a>
+    </header>
+
+    <!-- navigation menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="imagegallery.html">Gallery <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="#punkrock">Punk Rock</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="videos.html">Videos<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#fusion">Fusion Jazz</a>
+                <a href="#modal">Modal Jazz</a>
+                <a href="#hardbop">Hard Bop</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="carousel.html">Carousel<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#thrash">Thrash Metal</a>
+                <a href="#death">Death Metal</a>
+                <a href="#sludge">Sludge Metal</a>
+            </div>
+        </div>
+        <div><a href="#about">About</a></div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/carousel/frog_1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_2.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_3.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_5.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_6.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_7.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_8.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_9.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_10.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_11.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_12.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_13.jpg" alt=""></div>
+
+                <!-- font awesome buttonts -->
+                <div class="prev"><i onclick="showImage(-1)" class="fa-solid fa-backward"></i></div>
+                <div class="next"><i onclick="showImage(1)"  class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Cooper Bowman Productions</p>
+    </footer>
+</body>
+</html>
+<script src="js/carousel.js"></script>
+<script src="js/scripts.js"></script>

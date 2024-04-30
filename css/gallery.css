@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url("../images/background2.jpg");
+    background-attachment: fixed;
+}
+body{
+    background-color:rgba(8, 7, 7, 0.603);
+    font-family: sans-serif;
+}
+header{
+    border-bottom: 2px ridge goldenrod;
+    display: flex;
+    align-items: center;
+}
+header h2{
+    color: red;
+    font-size: 300%;
+    text-shadow: 1px 1px 1px whitesmoke, -1px -1px 1px whitesmoke;
+}
+header img{
+    max-width: 300px;
+    padding: 1em;
+}.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    max-width: 100%;
+    border: 2px ridge goldenrod;
+    border-radius: 10px;
+  }
+
+  #cornerBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 1em 2em;
+    background-color: rgba(255, 0, 0, 0.365);
+    border: rgba(255, 0, 0, 0.365);
+    border-radius: 10px;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+  }
+  #cornerBtn:hover{
+    background-color: black;
+    color: red;
+    border: 2px ridge goldenrod;
+  }
+
+  footer{
+    border-top: 2px ridge goldenrod;
+    text-shadow: 1px 1px 1px whitesmoke;
+    padding: 1em;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p{
+    padding: 2em 0;
+    font-weight: bold;
+    font-size: 85%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img{
+        max-width: 100%;
+    }
+    header{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+  }
+  

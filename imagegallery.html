@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="shortcut icon" href="images/gallery/logo.png" type="image/x-icon">
+    <title>Billy Joel Image Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Click Here to Return Home"><img src="images/logoimage.jpg" alt=""></a>
+    </header>
+
+    <!-- navigation menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="imagegallery.html">Gallery <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="#punkrock">Punk Rock</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="videos.html">Videos<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#fusion">Fusion Jazz</a>
+                <a href="#modal">Modal Jazz</a>
+                <a href="#hardbop">Hard Bop</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="carousel.html">Carousel<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#thrash">Thrash Metal</a>
+                <a href="#death">Death Metal</a>
+                <a href="#sludge">Sludge Metal</a>
+            </div>
+        </div>
+        <div><a href="#about">About</a></div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img src="images/gallery/billy1.jpg" alt="">
+                <img src="images/gallery/billy2.jpg" alt="">
+                <img src="images/gallery/billy3.jpg" alt="">
+                <img src="images/gallery/billy4.jpg" alt="">
+                <img src="images/gallery/billy5.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="images/gallery/billy6.jpg" alt="">
+                <img src="images/gallery/billy7.jpg" alt="">
+                <img src="images/gallery/billy8.jpg" alt="">
+                <img src="images/gallery/billy9.jpg" alt="">
+                <img src="images/gallery/billy10.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="images/gallery/billy11.jpg" alt="">
+                <img src="images/gallery/billy12.jpg" alt="">
+                <img src="images/gallery/billy13.jpg" alt="">
+                <img src="images/gallery/billy14.jpg" alt="">
+                <img src="images/gallery/billy15.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="images/gallery/billy16.jpg" alt="">
+                <img src="images/gallery/billy17.jpg" alt="">
+                <img src="images/gallery/billy18.jpg" alt="">
+                <img src="images/gallery/billy19.jpg" alt="">
+                <img src="images/gallery/billy20.jpg" alt="">
+            </div>
+        </div>
+        
+    </main>
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Cooper Bowman Productions</p>
+    </footer>
+    
+</body>
+</html>
+<script src="js/scripts.js"></script>
+<script src="js/carousel.js"></script>

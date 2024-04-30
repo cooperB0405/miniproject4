@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/videos.css">
+
+    <title>Foo Fighters Video Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Click Here to Return Home"><img src="images/logoimage.jpg" alt=""></a>
+    </header>
+
+    <!-- navigation menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="imagegallery.html">Gallery <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="#punkrock">Punk Rock</a>
+                <a href="#softrock">Soft Rock</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="videos.html">Videos<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#fusion">Fusion Jazz</a>
+                <a href="#modal">Modal Jazz</a>
+                <a href="#hardbop">Hard Bop</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="carousel.html">Carousel<i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#thrash">Thrash Metal</a>
+                <a href="#death">Death Metal</a>
+                <a href="#sludge">Sludge Metal</a>
+            </div>
+        </div>
+        <div><a href="#about">About</a></div>
+    </nav>
+    <nav class="stickynav">
+        <ul>
+            <li><a href="#vid1">Everlong</a></li>
+            <li><a href="#vid2">Tour Announcement</a></li>
+            <li><a href="#vid3">Preformance with Nandi Bushell</a></li>
+            <li><a href="#vid4">Preformance with Shane Hawkins</a></li>
+            <li><a href="#vid5">Everlong Live</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4>Everlong Music Video</h4>
+                <div class="videowrapper"><iframe src="https://www.youtube.com/embed/eBG7P-K-r1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="caption">"Everlong" by Foo Fighters </div>
+            </article>
+            <article id="vid2">
+                <h4>Tour Annoucement</h4>
+                <div class="videowrapper"><iframe  src="https://www.youtube.com/embed/RxmsM7YoTpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="caption">The first 2024 U.S. Shows Announced for Everything or Nothing At All Tour!!! <br>
+                    Tickets are on sale now. More to come...</div>
+            </article>
+            <article id="vid3">
+                <h4>Preformance with Nandi Bushell</h4>
+                <div class="videowrapper"><iframe  src="https://www.youtube.com/embed/jsDgrKdczAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="caption">Foo Fighters performing "Everlong" with 11-year-old drummer Nandi Bushell. <br>
+                    At The Forum in Inglewood, California on August 26, 2021.</div>
+            </article>
+            <article id="vid4">
+                <h4>Preformance with Shane Hawkins</h4>
+                <div class="videowrapper"><iframe  src="https://www.youtube.com/embed/P2KnD7sfpoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="caption">Shane Hawkins joined Foo Fighters as drummer <br>
+                    To perform "My Hero" at the Taylor Hawkins Tribute Concert. </div>
+            </article>
+            <article id="vid5">
+                <h4>Everlong Live</h4>
+                <div class="videowrapper"><iframe  src="https://www.youtube.com/embed/NWU33fvPxd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="caption">Foo Fighters performing “Everlong” live at Wembley Stadium, 2008</div>
+            </article>
+        </section>
+    </main>
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Cooper Bowman Productions</p>
+    </footer>
+    
+</body>
+</html>
+<script src="js/scripts.js"></script>
+<script src="js/videos.js"></script>
